@@ -18,7 +18,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://0xdreadnaught.github.io'
 
 author: Brian Peters                  # change to your full name
 
@@ -84,6 +84,10 @@ theme_mode: dark
 toc: true
 
 paginate: 10
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 markdown: kramdown
 
