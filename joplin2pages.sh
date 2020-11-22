@@ -20,5 +20,5 @@ do
 	filename=$(echo "$imagelink" | sed 's/\[/ /g' | sed 's/\]/ /g' | awk '{print $2}')
 	tochange=$(echo "$imagelink" | sed 's/\[/ /g' | sed 's/\]/ /g' | sed 's@(:/@@g' | sed 's/)//g' | awk '{print $3}')
 	echo "$filename => $tochange"
-	sed -i "s@:/$tochange@./../assets/img/$filename@g" "$targetpage"
+	sed -i "s@:/$tochange@./../../assets/img/$filename@g" "$targetpage"
 done
